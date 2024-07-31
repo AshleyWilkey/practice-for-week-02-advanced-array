@@ -24,14 +24,15 @@ let arr2 = [
 console.log(twoDimensionalProduct(arr2)); // 88
 
 */
-
-let twoDimensionalProduct = function(arr) {
-    // Your code here
+5
+let twoDimensionalProduct = function (arr) {
+  return arr.flat().reduce((acc, curr) => acc * curr, 1);
+  // Your code here
 };
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
-    module.exports = twoDimensionalProduct;
+  module.exports = twoDimensionalProduct;
 } catch (e) {
-    module.exports = null;
+  module.exports = null;
 }
